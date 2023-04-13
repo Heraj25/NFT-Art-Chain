@@ -37,7 +37,6 @@ You'll also need to create an account on [NFT.Storage](https://nft.storage/), an
 
 ### 6. Run deployment script
 In a separate terminal execute:
-`$ npx hardhat run ./scripts/deploy.js --network localhost`
 
 ### 7. Start frontend
 `$ npm run start`
