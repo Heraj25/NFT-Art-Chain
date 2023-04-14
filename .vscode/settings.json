@@ -3,5 +3,6 @@
         "AINFT",
         "NFTAI",
         "webfonts"
-    ]
+    ],
+    "solidity.defaultCompiler": "remote"
 }
