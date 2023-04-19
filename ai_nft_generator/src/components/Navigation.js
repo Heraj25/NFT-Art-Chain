@@ -8,6 +8,7 @@ const Navigation = ({ account, setAccount }) => {
         setAccount(account);
     }
 
+    /*  2ND DRAFT */
     return (
         <nav>
             <div className='nav__brand'>
@@ -38,7 +39,8 @@ const Navigation = ({ account, setAccount }) => {
 export default Navigation;
 
 
-/*
+
+/*   1ST DRAFT
 const Navigation = ({ account, setAccount }) => {
     const connectHandler = async () => {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
