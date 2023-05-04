@@ -1,3 +1,5 @@
+# NFT Art Chain
+
 # AI NFT Generator
 
 ## Technology Stack & Tools
