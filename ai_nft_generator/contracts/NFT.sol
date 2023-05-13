@@ -12,6 +12,8 @@ contract NFT is ERC721URIStorage {
     address public owner;
     uint256 public cost;
 
+    mapping(uint256 => uint256) private _tokenToId; // Declare the mapping
+    
     constructor(
         string memory _name,
         string memory _symbol,
@@ -29,6 +31,13 @@ contract NFT is ERC721URIStorage {
         uint256 newItemId = _tokenIds.current();
         _mint(msg.sender, newItemId);
         _setTokenURI(newItemId, tokenURI);
+
+        // Assign token ID to the newly minted token
+        _tokenToId[newItemId] = newItemId;
+    }
+
+     function getTokenId(uint256 tokenId) public view returns (uint256) {
+        return _tokenToId[tokenId];
     }
 
     function totalSupply() public view returns (uint256) {

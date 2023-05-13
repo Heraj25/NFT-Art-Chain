@@ -31,11 +31,23 @@ You'll need to create an account on [Hugging Face](https://huggingface.co/), vis
 
 You'll also need to create an account on [NFT.Storage](https://nft.storage/), and create a new API key.
 
+### Make sure you have Hardhat installed globally:
+`$ npm install -g hardhat`
+
+### In your project directory, install the required dependencies:
+`$ npm install @nomiclabs/hardhat-ethers ethers`
+
+
 ### 4. Run tests
 `$ npx hardhat test`
 
 ### 5. Start Hardhat node
 `$ npx hardhat node`
+
+### Open your terminal and run the following command to execute the script:
+`$ npx hardhat run ./scripts/getTokenId.js --network <networkName>`
+`
+<networkName> = hardhat
 
 ### 6. Run deployment script
 In a separate terminal execute: `$ npx hardhat run ./scripts/deploy.js --network localhost`
